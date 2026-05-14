@@ -1,3 +1,699 @@
+<!DOCTYPE html>
+<html lang="vi">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Tình Hữu Nghị Việt Nam - Lào</title>
+    <style>
+        body { margin:0; font-family:Arial,sans-serif; background:#f4f4f4; line-height:1.6; }
+        header { background:linear-gradient(to right,#da251d,#002868); color:white; text-align:center; padding:40px 20px; }
+        nav { background:#333; padding:12px; text-align:center; position: sticky; top: 0; z-index: 100; }
+        nav a { color:white; text-decoration:none; margin:0 15px; font-weight:bold; }
+        nav a:hover { color:yellow; }
+        section { padding:30px 20px; max-width:1100px; margin:auto; min-height: 80vh; }
+        .card { background:white; padding:25px; border-radius:15px; box-shadow:0 0 10px rgba(0,0,0,0.15); margin-bottom:25px; }
+        .container { display:grid; grid-template-columns:1fr 1fr; gap:20px; }
+        @media(max-width:768px){ .container { grid-template-columns:1fr; } }
+        .wheel { width:150px; height:150px; border-radius:50%; display:flex; align-items:center; justify-content:center; color:white; font-weight:bold; margin:20px auto; transition:3s; font-size:22px; border: 5px solid #fff; box-shadow: 0 0 10px rgba(0,0,0,0.2); }
+        #vn-wheel { background:conic-gradient(#ff4d4d, #4d79ff, #4dff88, #ffd24d); }
+        #lao-wheel { background:conic-gradient(#ff9933, #33cc99, #3399ff, #cc66ff); }
+        button { background:#da251d; color:white; border:none; padding:12px 18px; border-radius:8px; cursor:pointer; margin:5px; font-size:16px; transition: 0.3s; }
+        button:hover { background:#b71c1c; transform: scale(1.05); }
+        button:disabled { background: #ccc; cursor: not-allowed; }
+        #result { text-align:center; font-size:24px; height: 30px; color: #2e7d32; font-weight: bold; }
+        #scoreBoard { text-align:center; font-size:28px; color:#da251d; margin-top: 0; }
+        .video-container { position: relative; padding-bottom: 56.25%; height: 0; overflow: hidden; border-radius: 10px; background: #000; }
+        .video-container video { position: absolute; top: 0; left: 0; width: 100%; height: 100%; border-radius: 10px; }
+        footer { background:#222; color:white; text-align:center; padding:20px; }
+        .history-content { text-align: justify; white-space: pre-line; } /* Giữ nguyên định dạng văn bản */
+    </style>
+</head>
+<body>
+
+<header>
+    <h1>Tình Hữu Nghị Việt Nam – Lào</h1>
+    <p>Việt – Lào hai nước chúng ta, tình sâu hơn nước Hồng Hà - CỬu Long</p>
+</header>
+
+<nav>
+<a href="javascript:void(0)" onclick="showPage('home')">Trang chủ</a>
+    <a href="javascript:void(0)" onclick="showPage('history')">Lịch sử</a>
+    <a href="javascript:void(0)" onclick="showPage('culture')">Văn hóa</a>
+    <a href="javascript:void(0)" onclick="showPage('activities')">Hoạt động</a>
+    <a href="javascript:void(0)" onclick="showPage('game')">Trò chơi</a>
+</nav>
+
+<section id="home" class="page">
+    <div class="card">
+        <h2 style="color: #da251d; text-align: center;">Tình hữu nghị vĩ đại Việt Nam-Lào: Thủy chung, bền chặt từ lịch sử đến tương lai</h2>
+        <div style="text-align: justify; font-size: 15px; color: #333; line-height: 1.8;">
+            <p>Trong bối cảnh nước Cộng hòa dân chủ nhân dân (CHDCND) Lào chuẩn bị kỷ niệm 50 năm Quốc khánh vào ngày 2-12, chuyến thăm của Tổng Bí thư Tô Lâm đã trở thành điểm nhấn đặc biệt quan trọng. Chuyến thăm không chỉ thể hiện sự gắn bó thủy chung, son sắt của Việt Nam đối với đất nước Lào anh em, mà còn khẳng định Việt Nam hết sức coi trọng mối quan hệ hữu nghị vĩ đại, đoàn kết đặc biệt và hợp tác toàn diện Việt Nam - Lào.</p>
+            <p>Từ những trang sử hào hùng được viết bằng mồ hôi và xương máu, tình đoàn kết Việt Nam - Lào đã trở thành mối quan hệ đặc biệt hiếm có trong lịch sử thế giới. Các chiến sĩ quân tình nguyện và chuyên gia Việt Nam đã chia sẻ niềm vui, nỗi buồn với anh em Lào “như một miếng muối, một miếng rau” trong mọi trận chiến ác liệt, cống hiến cả cuộc đời mình để bảo vệ đất nước Lào.</p>
+            <p>Mối quan hệ hữu nghị vô giá ấy sẽ tiếp tục được các thế hệ hôm nay và mai sau gìn giữ và phát huy, trở thành tài sản thiêng liêng của hai dân tộc trên hành trình hướng tới hòa bình, thịnh vượng và phát triển bền vững.</p>
+        </div>
+    </div>
+
+    <div class="card">
+        <h2 style="text-align: center;">Video Tư Liệu: Tình Hữu Nghị Đặc Biệt</h2>
+        <div class="video-container">
+            <video width="100%" height="auto" controls>
+        	    <source src="https://www.dropbox.com/scl/fi/7mwd67lizaxnp7navsh3o/vtv4-viet-lao.mp4?rlkey=u8ertkeqosmn2ohydzrv13b7l&st=nfp2qktl&raw=1" type="video/mp4">
+            </video>
+        </div>
+    </div>
+</section>
+
+<section id="history" class="page" style="display:none;">
+    <div class="card">
+        <h2 style="color: #da251d; border-bottom: 2px solid #da251d; padding-bottom: 10px;">(1) THÔNG TIN VỀ VIỆT NAM</h2>
+        <div class="history-content">
+Việt Nam, quốc hiệu đầy đủ là Cộng hòa xã hội chủ nghĩa Việt Nam, là một quốc gia nằm ở cực Đông của bán đảo Đông Dương thuộc khu vực Đông Nam Á, giáp với Lào, Campuchia, Trung Quốc, biển Đông và vịnh Thái Lan.
+            Lãnh thổ Việt Nam xuất hiện con người sinh sống từ thời đại đồ đá cũ, khởi đầu với các nhà nước Văn Lang, Âu Lạc. Âu Lạc bị nhà Triệu ở phương Bắc thôn tính vào đầu thế kỷ thứ 2 TCN sau đó là thời kỳ Bắc thuộc kéo dài hơn một thiên niên kỷ. Chế độ quân chủ độc lập được tái lập sau chiến thắng của Ngô Quyền trước nhà Nam Hán, mở đường cho các triều đại độc lập kế tục, nhiều lần chiến thắng trước các cuộc chiến tranh xâm lược từ phương Bắc đồng thời dần mở rộng về phía nam. Thời kỳ Bắc thuộc cuối cùng kết thúc sau chiến thắng trước nhà Minh của nghĩa quân Lam Sơn.
+            Đến thời cận đại, Việt Nam lần lượt trải qua các giai đoạn Pháp thuộc và Nhật thuộc. Sau khi đánh bại và buộc Nhật Bản đầu hàng, khối Đồng Minh tạo điều kiện cho Pháp thu hồi Liên bang Đông Dương. Kết thúc Thế chiến II, Việt Nam chịu sự can thiệp của các nước Đồng Minh bao gồm Anh, Pháp (miền Nam), Trung Hoa Dân Quốc (miền Bắc). Nhà nước Việt Nam Dân chủ Cộng hòa do Việt Minh lãnh đạo ra đời khi Hồ Chí Minh tuyên bố độc lập vào ngày 2 tháng 9 năm 1945 sau thành công của Cách mạng Tháng Tám và chiến thắng Liên hiệp Pháp cùng Quốc gia Việt Nam do Pháp hậu thuẫn trong chiến tranh Đông Dương lần thứ nhất. Sự kiện này dẫn tới Hiệp định Genève (1954) được ký kết và Việt Nam bị chia cắt thành hai vùng tập kết quân sự, lấy ranh giới là vĩ tuyến 17. Việt Nam Dân chủ Cộng hòa kiểm soát phần phía bắc còn phía nam do Việt Nam Cộng hòa (nhà nước kế tục Quốc gia Việt Nam) kiểm soát và được Hoa Kỳ hậu thuẫn. Xung đột về thống nhất lãnh thổ đã dẫn tới chiến tranh Việt Nam với sự can thiệp của nhiều nước và kết thúc với chiến thắng của Việt Nam Dân chủ Cộng hòa, Mặt trận Dân tộc Giải phóng miền Nam Việt Nam cùng sự sụp đổ của Việt Nam Cộng hòa vào năm 1975. Chủ quyền phần phía Nam được chính quyền Cộng hòa miền Nam Việt Nam (do Mặt trận Dân tộc Giải phóng miền Nam Việt Nam thành lập) giành quyền kiểm soát. Năm 1976, Việt Nam Dân chủ Cộng hòa và Cộng hòa miền Nam Việt Nam thống nhất thành Cộng hòa xã hội chủ nghĩa Việt Nam.
+Sau khi tái thống nhất, Việt Nam tiếp tục gặp khó khăn do sự sụp đổ và tan rã của đồng minh Liên Xô cùng Khối phía Đông, các lệnh cấm vận của Hoa Kỳ, chiến tranh Đông Dương lần ba và hậu quả của chính sách bao cấp sau nhiều năm áp dụng. Năm 1986, Đảng Cộng sản Việt Nam ban hành cải cách đổi mới, xây dựng kinh tế thị trường và hội nhập sâu rộng. Cải cách kinh tế cùng quy mô dân số lớn đưa Việt Nam trở thành một trong những nước đang phát triển có tốc độ tăng trưởng thuộc nhóm nhanh nhất thế giới, được coi là Hổ mới châu Á dù cho vẫn gặp phải những thách thức như tham nhũng và phúc lợi xã hội chưa đầy đủ. Ngoài ra, giới bất đồng chính kiến và các tổ chức theo dõi nhân quyền có quan điểm chỉ trích hồ sơ nhân quyền của Việt Nam liên quan đến các vấn đề tôn giáo, kiểm duyệt truyền thông và tự do dân sự.
+        </div>
+    </div>
+
+    <div class="card">
+        <h2 style="color: #002868; border-bottom: 2px solid #002868; padding-bottom: 10px;">(2) THÔNG TIN VỀ LÀO</h2>
+        <div class="history-content">
+            Nằm trên bán đảo Đông Dương, giáp Việt Nam, Cam-pu-chia, Thái Lan, Mi-an-ma và Trung Quốc. Lào là một nước không có biển. Sản xuất lâm nghiệp và khai thác gỗ là ngành cho thu nhập chính đối với nền kinh tế của Lào. Cây lương thực chủ yếu là lúa nếp. Công nghiệp chủ yếu là khai khoáng và chế biến lâm sản, khai thác thủy điện. 
+            Vị trí địa lý: Nằm trên bán đảo Đông Dương, giáp Việt Nam, Cam-pu-chia, Thái Lan, Mi-an-ma và Trung Quốc. 
+            Tọa độ: 18000 vĩ bắc, 105000 kinh đông.
+            Diện tích: 236.800 km2
+            Thủ đô: Viêng Chăn (Vientiane)
+            Lịch sử: Vào thế kỷ XIV, vua Phạ Ngừm thống nhất nước Lào, thành vương quốc Lạn Xạng (Triệu Voi). Năm 1893, thực dân Pháp đô hộ Lào. Ngày 12/10/1945, nước Lào độc lập. Đầu năm 1946, Pháp quay lại xâm lược Lào. Tháng 7-1954, Pháp ký hiệp định Giơ-ne-vơ công nhận nền độc lập của Lào. Từ năm 1955, Mỹ gây chiến tranh chống lại nhân dân Lào. Ngày 21/2/1973, Hiệp định Viêng Chăn lập lại hòa bình và thực hiện hòa hợp dân tộc ở Lào được ký kết giữa Mặt trận Lào yêu nước và phái hữu Viêng Chăn. Ngày 2/12/1975, Đại hội đại biểu nhân dân Lào họp ở Viêng Chăn tuyên bố thành lập nước Cộng hòa dân chủ nhân dân Lào.
+            Quốc Khánh: 02-12 (1975)
+            Tổ chức nhà nước:
+            Chính thể: Nhà nước dân chủ nhân dân.
+Các khu vực hành chính: 16 tỉnh, 1 thành phố* và 1 vùng đặc biệt**: Attapu, Bokeo, Bolikhamxai, Champasak, Houaphan, Khammouan, Louangnamtha, Louangphabang, Oudomxai, Phongsali, Salavan, Savannakhet, Viangchan*, Viang-chan, Xâignbouli, Xaisomboun**, Xekong, Xiangkhoang.
+            Hiến pháp: Thông qua ngày 14/8/1991.
+            Cơ quan hành pháp:
+            Đứng đầu Nhà nước: Chủ tịch nước.
+            Đứng đầu Chính phủ: Thủ tướng.
+            Bầu cử: Chủ tịch nước do Quốc hội bầu, nhiệm kỳ 5 năm; Thủ tướng do Chủ tịch nước bổ nhiệm với sự phê duyệt của Quốc hội, nhiệm kỳ 5 năm.
+            Cơ quan lập pháp: Quốc hội (99 ghế, được bầu theo phổ thông đầu phiếu, nhiệm kỳ 5 năm).
+            Cơ quan tư pháp: Tòa án nhân dân tối cao do Quốc hội bầu dựa trên đề cử của Uỷ ban thường vụ Quốc hội, Phó chánh Tòa án nhân dân tối cao và các thẩm phán do Uỷ ban thường vụ Quốc hội bổ nhiệm.
+            Chế độ bầu cử: Từ 18 tuổi trở lên, phổ thông đầu phiếu.
+            Chính đảng: Đảng Nhân dân cách mạng Lào (LPRP), đứng đầu là Tổng Bí thư kiêm Chủ tịch nước.
+            Khí hậu: Nhiệt đới gió mùa; mùa mưa (tháng 5 đến tháng 11); mùa khô (tháng 12 đến tháng 4). Nhiệt độ trung bình ở miền Bắc tháng 1: 15oC, tháng 7: 28oC , ở miền Nam và miền Trung tháng 1: 25oC , tháng 7: 30oC. Lượng mưa trung bình ở vùng núi 3.500 mm, ở đồng bằng 1.000 - 2.000 mm.
+            Địa hình: Phần lớn là đồi núi, có một số vùng đồng bằng và cao nguyên.
+            Tài nguyên thiên nhiên: Gỗ, thủy điện, thạch cao, thiếc, vàng, đá quý.
+            Dân số: khoảng 6.769.700 người (2013)
+            Các dân tộc: Lào Loum (đồng bằng) (68%), Lào Theung (vùng cao) (22%), Lào Soung (vùng núi) (9%), một số dân tộc khác (1%).
+            Ngôn ngữ chính: Tiếng Lào; tiếng Pháp, Anh và một số thổ ngữ khác cũng được sử dụng.
+            Tôn giáo: Đạo Phật (60%), tín ngưỡng truyền thống và tôn giáo khác (40%).
+            Kinh tế:
+            Tổng quan: Lào là một nước không có biển, với cơ sở hạ tầng còn thô sơ, không có đường sắt, hệ thống đường sá mới hình thành, hệ thống truyền thông còn hạn chế. Điện chủ yếu chỉ có ở khu vực đô thị. Kinh tế nông nghiệp chiếm 1/2 GDP và sử dụng 80% lực lượng lao động. Tuy nhiên, sản xuất lâm nghiệp và khai thác gỗ mới là ngành cho thu nhập chính đối với nền kinh tế của Lào. Cây lương thực chủ yếu là lúa nếp. Công nghiệp chủ yếu là khai khoáng và chế biến lâm sản, khai thác thủy điện. Trong những năm gần đây nền kinh tế có nhiều tiến bộ, các mục tiêu cơ bản của kế hoạch 5 năm đều đạt kết quả tốt. Nhịp độ tăng trưởng kinh tế trung bình khoảng 6%/năm thu nhập bình quân đầu người tăng dần.
+Sản phẩm công nghiệp: Thiếc, thạch cao, gỗ, điện, hàng may mặc.
+            Sản phẩm nông nghiệp: Khoai lang, rau xanh, ngô, cà phê, mía, thuốc lá, bông, chè, lạc, lúa gạo, gia súc, gia cầm. 
+            Văn hóa: 
+            Giáo dục: Miễn phí và bắt buộc trong 8 năm (từ 7 tới 15 tuổi). Mặc dù học miễn phí nhưng ở nông thôn, sau bậc tiểu học thì số người đi học giảm dần. Ở Lào có học viện kỹ thuật và trường Đại học Y khoa, các trường đào tạo giáo viên ở Viêng Chăn.
+            Các thành phố lớn: Savanakhet, Louangphrabang...
+            Đơn vị tiền tệ: kíp mới (NK), 1 NK = 100 at.
+            Danh lam thắng cảnh: Viêng Chăn, Thạt Luông, Cánh đồng Chum-Xiêng Khoảng, sông Mê Công, v.v..
+            Quan hệ quốc tế: Tham gia các tổ chức quốc tế: AsDB, ASEAN, FAO, G-77, IBRD, ICAO, IFAD, ILO, IMF, Interpol, IOC, ITU, UN, UNCTAD, UNESCO, UNIDO, UPU, WFTU, WHO, WIPO, WMO, v.v..
+        </div>
+    </div>
+</section>
+
+<section id="culture" class="page" style="display:none;">
+    <div class="card">
+        <h2>VĂN HÓA NƯỚC CỘNG HÒA DÂN CHỦ NHÂN DÂN LÀO</h2>
+        <p>Lào được nhắc đến với cái tên Triệu Voi hay còn gọi là xứ sở Champa, người anh em của Việt Nam, nới về truyền thống văn hóa và con người thì Việt và Lào có khá nhiều nét tương đồng. Đến với Lào là đến với đất nước của chùa tháp và lễ hội. Đến du lịch Lào du khách không thể bỏ qua những ngôi đền đài, chùa tháp, những hang động kì bí và những thác nước hùng vĩ, còn có những dãy núi cao thấp thoáng sương mù và những cánh rừng dày đặc phong phú với hàng ngàn loại thực vật khác nhau.Nhân dân Lào có nhiều phong tục tốt đẹp được hình thành trong quá trình lịch sử. Những phong tục tập quán ấy trở thành lệ làng, được các thành viên trong bản mường thừa nhận và tự giác thực hiện. Thành viên nào làm trái lệ làng sẽ bị phạt, hình thức phạt do các già bản và tập thể bản mường quyết định. Nước Lào nằm sâu trong lục địa châu Á nơi giao tiếp giữa hai nên văn minh cổ đại là Ấn Độ và Trung Hoa. Bởi vậy trong quá trình lịch sử, nhân dân Lào còn tiếp thu các trào lưu văn hóa tràn qua các vùng này, ảnh hưởng sâu sắc nhất là phật giáo và văn hóa Ấn Độ.
+
+Nước Lào đất rộng, dân không đông lại gồm nhiều dân tộc, bộ tộc. Tuy cùng sinh sống bằng nghề nông nhưng trình độ sản xuất không đồng đều nên phong tục tập quán ở mỗi miền có sự khác biệt. Vì thế mà phong tục tập quán ở Lào rất đa dạng thể hiện rõ trình độ sản xuất sinh hoạt của mỗi nhóm dân tộc, bộ tộc. Nhưng ở đây chỉ đề cập đến những tập quán chủ yếu có tính phổ biến.
+
+Văn hóa ăn uống
+
+Ẩm thực Lào mang phong cách tương tự các quốc gia láng giềng là Campuchia và Thái Lan: cay, chua và ngọt. Tuy nhiên, ẩm thực lại mang những phong cách đặc trưng rất riêng.
+Người Lào ăn gạo là chính; các món ăn có đặc điểm là dùng những gia vị như gừng, me, lá chanh, và nhiều loại ớt khô rất cay. Vị chính trong các món ăn hầu hết các món ăn đều có rất nhiều ớt. Chỉ riêng ớt có hàng chục món: từ ớt chiên giòn, ớt muối chua, ớt sa tế, ớt hầm, ớt luộc … Món ăn tiêu biểu của người Lào là sự pha trộn giữa cay và ngọt, được trung hòa thêm thảo mộc. Mắm cá (pa dek) và mắm Cheo gồm da trâu, ớt nướng, tỏi nướng, riềng nướng, đường cùng nhiều gia vị thảo mộc trộn lẫn hoặc mắm Muok gồm lòng cá trộn ớt, sả, củ hành … hầu như nhà nào cũng có và nước mắm (nám pla) được người Lào sử dụng hết sức phổ biến.
+
+Ẩm thực Lào có những món được xem là đặc sản như: Món Tam Maak Hung còn gọi là nộm đu đủ gồm dưa muối, đu đủ, đậu đũa, cà dĩa giã rồi trộn chung với cùng hàng chục gia vị ăn rất lạ. Ngoài Tam Maak Hung còn có các món như Thoót mú đẹt điêu , tôm dâm cung, cá nướng… Mỗi món đều có các nguyên liệu khác như Lạp được làm bằng thịt heo, băm nhỏ, trộn gia vị Lào, ăn với xôi hoặc cơm, trộn chung với ớt cay, cá nướng được ướp muối ngoài da, khi nuớng chín, da cá không cháy nhưng phủ trắng lớp muối, thịt cá không dính vào da, mùi thơm, chấm với nước “chẻo” (đặc chế từ ớt, tỏi, hành, mắm, muối, bột ngọt và chanh). Món ăn từ côn trùng là loại thức ăn giàu đạm được tìm thấy rất nhiều trên đất nước Campuchia và Thái Lan và Lào. Người Lào cũng rất thích dùng côn trùng để chế biến nhiều món ăn. Từ dế cơm, trứng kiến đến con cà cuống, nhền nhện trong các món chiên, xào, dồi đậu phộng đến hấp cơm hay ngâm giấm đều rất ngon. Đắt nhất vẫn là con cà cuống – một loại côn trùng có ích sống nhiều ở đồng ruộng Campuchia với hương vị thơm cay. Tuy nhiên, món ăn từ côn trùng của Lào lại ít món hơn người Thái Lan và ít phổ biến hơn</p>
+    </div>
+</section>
+<section id="activities" class="page" style="display:none;">
+    <div class="card">
+        <h2 style="color: #da251d; border-bottom: 2px solid #da251d; padding-bottom: 10px;">CÁC HOẠT ĐỘNG CỦA DU HỌC SINH LÀO TẠI VIỆT NAM</h2>
+        <div style="text-align: justify; line-height: 1.8;">
+                  
+            <div style="display: flex; flex-direction: column; align-items: center; gap: 30px; margin: 30px 0;">
+                
+                <div style="text-align: center; width: 100%;">
+                    <img src="https://www.dropbox.com/scl/fi/p9lqg75s3932o6lc9a69d/lao1-9.jpg?rlkey=i4zctaz6yno0e7qz0as6m7abh&st=fgjkuy7r&raw=1" 
+                         alt="Đào tạo tiếng Việt" 
+                         style="width: 100%; max-width: 500px; border-radius: 12px; box-shadow: 0 5px 15px rgba(0,0,0,0.2);">
+                    <p style="font-style: italic; color: #3e2e2e; margin-top: 12px; font-weight: bold;">
+                        Du học sinh Lào đón tết Nguyên Đán tại Việt Nam
+</p>
+                </div>
+
+                <div style="text-align: center; width: 100%;">
+                    <img src="https://www.dropbox.com/scl/fi/snuomppqzvuqu5bbqgwxp/vnghelao-1.jpg?rlkey=bowusm4vjhkt0y5ut7r7o1pw5&st=7jkywy78&raw=1" 
+                         alt="Văn nghệ 20/11" 
+                         style="width: 100%; max-width: 700px; border-radius: 12px; box-shadow: 0 5px 15px rgba(0,0,0,0.2);">
+                    <p style="font-style: italic; color: #444; margin-top: 12px; font-weight: bold;">
+                        Văn Nghệ chào mừng ngày nhà giáo Việt Nam 20/11
+                    </p>
+                </div>
+                <div style="text-align: center; width: 100%;">
+                    <img src="https://www.dropbox.com/scl/fi/6bxcnt1zr8paa6wm9wcxn/lao1.jpg?rlkey=nn7issaube4ttnwr7mfibxwyd&st=9ti2l9t8&raw=1" 
+                         alt="Văn nghệ 20/11" 
+                         style="width: 100%; max-width: 700px; border-radius: 12px; box-shadow: 0 5px 15px rgba(0,0,0,0.2);">
+                    <p style="font-style: italic; color: #444; margin-top: 12px; font-weight: bold;">
+                        Du Học Sinh Lào sang đào tạo tiếng Việt
+                    </p>
+                </div>
+                <div style="text-align: center; width: 100%;">
+                    <img src="https://www.dropbox.com/scl/fi/ve7izhu1xubbfwb7a174b/tetlao.jpg?rlkey=adraan6v1tt3wk7bucz1hs2ci&st=cslfcs3v&raw=1" 
+                         alt="Văn nghệ 20/11" 
+                         style="width: 100%; max-width: 700px; border-radius: 12px; box-shadow: 0 5px 15px rgba(0,0,0,0.2);">
+                    <p style="font-style: italic; color: #444; margin-top: 12px; font-weight: bold;">
+                        Cán bộ, giáo viên, nhân viên nhà trường tham gia Tết Bunpimay truyền thống cảu Lào
+                    </p>
+                </div>
+                <div style="text-align: center; width: 100%;">
+                    <img src="https://www.dropbox.com/scl/fi/6bxcnt1zr8paa6wm9wcxn/lao1.jpg?rlkey=nn7issaube4ttnwr7mfibxwyd&st=9ti2l9t8&raw=1" 
+                         alt="Văn nghệ 20/11" 
+                         style="width: 100%; max-width: 700px; border-radius: 12px; box-shadow: 0 5px 15px rgba(0,0,0,0.2);">
+                    <p style="font-style: italic; color: #444; margin-top: 12px; font-weight: bold;">
+                        Du Học Sinh Lào sang đào tạo tiếng Việt
+                    </p>
+                </div>
+
+                <div style="text-align: center; margin: 30px 0;">
+        <div style="display: flex; justify-content: center; gap: 15px; flex-wrap: wrap;">
+            <img src="https://www.dropbox.com/scl/fi/uziolrejathlg3e7l47zo/z78227…612e9c.jpg?rlkey=w7099ygvy0jjj5ffh6p453gj1&st=cepmb4wo&raw=1" 
+            style="width: 50%; min-width: 250px; border-radius: 8px; box-shadow: 0 4px 8px rgba(0,0,0,0.1);">
+<img src="https://www.dropbox.com/scl/fi/sa5yn4xkz32tgi5083b29/z78226…775454.jpg?rlkey=550sizrdefl7112yw2uj9lru0&st=zavr62y5&raw=1" 
+            style="width: 50%; min-width: 250px; border-radius: 8px; box-shadow: 0 4px 8px rgba(0,0,0,0.1);">
+            <img src="https://www.dropbox.com/scl/fi/77cimmtyza8bevtzx34kd/z78226…f994d8.jpg?rlkey=ttxt51zb8xm3gqgxxhio31qk7&st=kcikdo6k&raw=1" 
+            style="width: 50%; min-width: 200px; border-radius: 8px; box-shadow: 0 4px 8px rgba(0,0,0,0.1);">
+        </div>
+    
+        <p style="font-style: italic; color: #444; margin-top: 15px; font-weight: bold;">
+        Các hoạt động giao lưu văn hóa và đào tạo giữa học sinh hai nước Việt - Lào
+     </p>
+    </div>                
+        <div style="text-align: center; width: 100%;">
+                    <img src="https://www.dropbox.com/scl/fi/6fx2iew7kyhw88mx8cqof/z78226…bb9b09.jpg?rlkey=7oaklxp9shjr9qky3n3zjcu4c&st=2b2qs2iw&raw=1" 
+                         alt="Văn nghệ 20/11" 
+                         style="width: 100%; max-width: 700px; border-radius: 12px; box-shadow: 0 5px 15px rgba(0,0,0,0.2);">
+                    <p style="font-style: italic; color: #444; margin-top: 12px; font-weight: bold;">
+                        Hội thi flasmob chào mừng ngày 26/3
+                    </p>
+                </div>
+            </div>
+        </div>
+</section>
+<section id="game" class="page" style="display:none;">
+    <div class="card">
+        <h2>🎮 Game vòng quay Việt – Lào</h2>
+        <h2 id="scoreBoard">Điểm: 0</h2>
+        <div class="container">
+            <div class="card" style="text-align: center;">
+                <h3>🇻🇳 Việt Nam</h3>
+                <div id="vn-wheel" class="wheel">VN</div>
+                <button id="btn-spin-vn" onclick="spin('VN')">Quay VN</button>
+                <h4 id="vn-topic"></h4>
+                <div id="vn-question"></div>
+                <div id="vn-answers"></div>
+            </div>
+            <div class="card" style="text-align: center;">
+                <h3>🇱🇦 Lào</h3>
+                <div id="lao-wheel" class="wheel">LAO</div>
+                <button id="btn-spin-lao" onclick="spin('LAO')">Quay Lào</button>
+                <h4 id="lao-topic"></h4>
+                <div id="lao-question"></div>
+                <div id="lao-answers"></div>
+            </div>
+        </div>
+        <h3 id="result"></h3>
+    </div>
+</section>
+
+<footer>
+    <p>Dự án học tập 2026 - Tình hữu nghị Việt Lào</p>
+</footer>
+
+<script>
+    let score = 0;
+    const gameData = {
+        'VN': {
+            'Văn hóa': [
+                { q: "Trang phục truyền thống Việt Nam?", A: "Kimono", B: "Hanbok", C: "Áo dài", D: "Sari", a: "C" },
+                { q: "Quốc hoa Việt Nam?", A: "Hoa sen", B: "Tulip", C: "Hoa hồng", D: "Hoa cúc", a: "A" }
+            ],
+'Ẩm thực': [{ q: "Món ăn nổi tiếng của Việt Nam?", A: "Pizza", B: "Phở", C: "Burger", D: "Sushi", a: "B" }]
+        },
+        'LAO': {
+            'Văn hóa': [{ q: "Cách chào truyền thống của Lào?", A: "Bắt tay", B: "Nop", C: "Ôm", D: "Im lặng", a: "B" }],
+            'Ẩm thực': [{ q: "Món ăn nổi tiếng của Lào?", A: "Pizza", B: "Larb", C: "Burger", D: "Sushi", a: "B" }]
+        }
+    };
+
+    let state = {
+        VN: { topic: "", index: 0, rot: 0 },
+        LAO: { topic: "", index: 0, rot: 0 }
+    };
+
+    function showPage(id) {
+        document.querySelectorAll(".page").forEach(p => p.style.display = "none");
+        let target = document.getElementById(id);
+        if (target) target.style.display = "block";
+        window.scrollTo(0,0);
+    }
+
+    function spin(country) {
+        const btn = document.getElementById(`btn-spin-${country.toLowerCase()}`);
+        btn.disabled = true;
+        state[country].index = 0;
+        let topics = Object.keys(gameData[country]);
+        state[country].topic = topics[Math.floor(Math.random() * topics.length)];
+        state[country].rot += 1800;
+        document.getElementById(`${country.toLowerCase()}-wheel`).style.transform = `rotate(${state[country].rot}deg)`;
+        setTimeout(() => {
+            document.getElementById(`${country.toLowerCase()}-topic`).innerText = "🎯 " + state[country].topic;
+            document.getElementById(`${country.toLowerCase()}-question`).innerHTML = `<button onclick="loadQuestion('${country}')">Bắt đầu trả lời</button>`;
+            btn.disabled = false;
+        }, 3000);
+    }
+
+    function loadQuestion(country) {
+        let q = gameData[country][state[country].topic][state[country].index];
+        document.getElementById(`${country.toLowerCase()}-question`).innerText = q.q;
+        document.getElementById(`${country.toLowerCase()}-answers`).innerHTML = `
+            <button onclick="checkAnswer('${country}','A')">${q.A}</button>
+            <button onclick="checkAnswer('${country}','B')">${q.B}</button>
+            <button onclick="checkAnswer('${country}','C')">${q.C}</button>
+            <button onclick="checkAnswer('${country}','D')">${q.D}</button>`;
+    }
+
+    function checkAnswer(country, choice) {
+        let q = gameData[country][state[country].topic][state[country].index];
+        let resEl = document.getElementById("result");
+        if (choice === q.a) {
+            score += 10;
+            resEl.innerText = "✅ Chính xác! +10 điểm";
+            resEl.style.color = "green";
+        } else {
+            resEl.innerText = "❌ Sai rồi, đáp án là " + q.a;
+            resEl.style.color = "red";
+        }
+        document.getElementById("scoreBoard").innerText = "Điểm: " + score;
+        setTimeout(() => {
+            resEl.innerText = "";
+            state[country].index++;
+            if (state[country].index < gameData[country][state[country].topic].length) {
+loadQuestion(country);
+            } else {
+                document.getElementById(`${country.toLowerCase()}-question`).innerText = "🎉 Hoàn thành!";
+                document.getElementById(`${country.toLowerCase()}-answers`).innerHTML = "";
+            }
+        }, 1500);
+    }
+</script>
+</body>
+</html>
+<!DOCTYPE html>
+<html lang="vi">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Tình Hữu Nghị Việt Nam - Lào</title>
+    <style>
+        body { margin:0; font-family:Arial,sans-serif; background:#f4f4f4; line-height:1.6; }
+        header { background:linear-gradient(to right,#da251d,#002868); color:white; text-align:center; padding:40px 20px; }
+        nav { background:#333; padding:12px; text-align:center; position: sticky; top: 0; z-index: 100; }
+        nav a { color:white; text-decoration:none; margin:0 15px; font-weight:bold; }
+        nav a:hover { color:yellow; }
+        section { padding:30px 20px; max-width:1100px; margin:auto; min-height: 80vh; }
+        .card { background:white; padding:25px; border-radius:15px; box-shadow:0 0 10px rgba(0,0,0,0.15); margin-bottom:25px; }
+        .container { display:grid; grid-template-columns:1fr 1fr; gap:20px; }
+        @media(max-width:768px){ .container { grid-template-columns:1fr; } }
+        .wheel { width:150px; height:150px; border-radius:50%; display:flex; align-items:center; justify-content:center; color:white; font-weight:bold; margin:20px auto; transition:3s; font-size:22px; border: 5px solid #fff; box-shadow: 0 0 10px rgba(0,0,0,0.2); }
+        #vn-wheel { background:conic-gradient(#ff4d4d, #4d79ff, #4dff88, #ffd24d); }
+        #lao-wheel { background:conic-gradient(#ff9933, #33cc99, #3399ff, #cc66ff); }
+        button { background:#da251d; color:white; border:none; padding:12px 18px; border-radius:8px; cursor:pointer; margin:5px; font-size:16px; transition: 0.3s; }
+        button:hover { background:#b71c1c; transform: scale(1.05); }
+        button:disabled { background: #ccc; cursor: not-allowed; }
+        #result { text-align:center; font-size:24px; height: 30px; color: #2e7d32; font-weight: bold; }
+        #scoreBoard { text-align:center; font-size:28px; color:#da251d; margin-top: 0; }
+        .video-container { position: relative; padding-bottom: 56.25%; height: 0; overflow: hidden; border-radius: 10px; background: #000; }
+        .video-container video { position: absolute; top: 0; left: 0; width: 100%; height: 100%; border-radius: 10px; }
+        footer { background:#222; color:white; text-align:center; padding:20px; }
+        .history-content { text-align: justify; white-space: pre-line; } /* Giữ nguyên định dạng văn bản */
+        .anhnenhuunghi {
+/* Sử dụng link Dropbox của bạn làm ảnh nền */
+            background-image: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)), 
+            url('https://www.dropbox.com/scl/fi/q6tgeddwztjj3hhqu73n6/0215_t…201.jpg?rlkey=1lsakexx2e93sjoiypolb2pmt&st=8125f5p2&raw=1');
+            
+            /* Các thuộc tính điều khiển ảnh nền */
+            background-size: cover;
+            background-position: center;
+            /* background-attachment: fixed;*/
+            
+            /* Chỉnh kích thước và căn lề chữ */
+            height: 300px;
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+            align-items: center;
+            color: white; 
+            text-align: center;
+        }
+    </style>
+</head>
+<body>
+
+<header class = "anhnenhuunghi">
+    <h1>Tình Hữu Nghị Việt Nam – Lào</h1>
+    <p>Việt – Lào hai nước chúng ta, tình sâu hơn nước Hồng Hà - Cửu Long</p>
+</header>
+
+<nav>
+    <a href="javascript:void(0)" onclick="showPage('home')">Trang chủ</a>
+    <a href="javascript:void(0)" onclick="showPage('history')">Lịch sử</a>
+    <a href="javascript:void(0)" onclick="showPage('culture')">Văn hóa</a>
+    <a href="javascript:void(0)" onclick="showPage('activities')">Hoạt động</a>
+    <a href="javascript:void(0)" onclick="showPage('game')">Trò chơi</a>
+</nav>
+
+<section id="home" class="page">
+    <div class="card">
+        <h2 style="color: #da251d; text-align: center;">Tình hữu nghị vĩ đại Việt Nam-Lào: Thủy chung, bền chặt từ lịch sử đến tương lai</h2>
+        <div style="text-align: justify; font-size: 15px; color: #333; line-height: 1.8;">
+            <p>Trong bối cảnh nước Cộng hòa dân chủ nhân dân (CHDCND) Lào chuẩn bị kỷ niệm 50 năm Quốc khánh vào ngày 2-12, chuyến thăm của Tổng Bí thư Tô Lâm đã trở thành điểm nhấn đặc biệt quan trọng. Chuyến thăm không chỉ thể hiện sự gắn bó thủy chung, son sắt của Việt Nam đối với đất nước Lào anh em, mà còn khẳng định Việt Nam hết sức coi trọng mối quan hệ hữu nghị vĩ đại, đoàn kết đặc biệt và hợp tác toàn diện Việt Nam - Lào.</p>
+<p>Từ những trang sử hào hùng được viết bằng mồ hôi và xương máu, tình đoàn kết Việt Nam - Lào đã trở thành mối quan hệ đặc biệt hiếm có trong lịch sử thế giới. Các chiến sĩ quân tình nguyện và chuyên gia Việt Nam đã chia sẻ niềm vui, nỗi buồn với anh em Lào “như một miếng muối, một miếng rau” trong mọi trận chiến ác liệt, cống hiến cả cuộc đời mình để bảo vệ đất nước Lào.</p>
+            <p>Mối quan hệ hữu nghị vô giá ấy sẽ tiếp tục được các thế hệ hôm nay và mai sau gìn giữ và phát huy, trở thành tài sản thiêng liêng của hai dân tộc trên hành trình hướng tới hòa bình, thịnh vượng và phát triển bền vững.</p>
+        </div>
+    </div>
+
+    <div class="card">
+        <h2 style="text-align: center;">Video Tư Liệu: Tình Hữu Nghị Đặc Biệt</h2>
+        <div class="video-container">
+            <video width="100%" height="auto" controls>
+        	    <source src="https://www.dropbox.com/scl/fi/7mwd67lizaxnp7navsh3o/vtv4-viet-lao.mp4?rlkey=u8ertkeqosmn2ohydzrv13b7l&st=nfp2qktl&raw=1" type="video/mp4">
+            </video>
+        </div>
+    </div>
+</section>
+
+<section id="history" class="page" style="display:none;">
+    <div class="card">
+        <h2 style="color: #da251d; border-bottom: 2px solid #da251d; padding-bottom: 10px;">(1) THÔNG TIN VỀ VIỆT NAM</h2>
+        <div class="history-content">
+            Việt Nam, quốc hiệu đầy đủ là Cộng hòa xã hội chủ nghĩa Việt Nam, là một quốc gia nằm ở cực Đông của bán đảo Đông Dương thuộc khu vực Đông Nam Á, giáp với Lào, Campuchia, Trung Quốc, biển Đông và vịnh Thái Lan.
+            Lãnh thổ Việt Nam xuất hiện con người sinh sống từ thời đại đồ đá cũ, khởi đầu với các nhà nước Văn Lang, Âu Lạc. Âu Lạc bị nhà Triệu ở phương Bắc thôn tính vào đầu thế kỷ thứ 2 TCN sau đó là thời kỳ Bắc thuộc kéo dài hơn một thiên niên kỷ. Chế độ quân chủ độc lập được tái lập sau chiến thắng của Ngô Quyền trước nhà Nam Hán, mở đường cho các triều đại độc lập kế tục, nhiều lần chiến thắng trước các cuộc chiến tranh xâm lược từ phương Bắc đồng thời dần mở rộng về phía nam. Thời kỳ Bắc thuộc cuối cùng kết thúc sau chiến thắng trước nhà Minh của nghĩa quân Lam Sơn.
+Đến thời cận đại, Việt Nam lần lượt trải qua các giai đoạn Pháp thuộc và Nhật thuộc. Sau khi đánh bại và buộc Nhật Bản đầu hàng, khối Đồng Minh tạo điều kiện cho Pháp thu hồi Liên bang Đông Dương. Kết thúc Thế chiến II, Việt Nam chịu sự can thiệp của các nước Đồng Minh bao gồm Anh, Pháp (miền Nam), Trung Hoa Dân Quốc (miền Bắc). Nhà nước Việt Nam Dân chủ Cộng hòa do Việt Minh lãnh đạo ra đời khi Hồ Chí Minh tuyên bố độc lập vào ngày 2 tháng 9 năm 1945 sau thành công của Cách mạng Tháng Tám và chiến thắng Liên hiệp Pháp cùng Quốc gia Việt Nam do Pháp hậu thuẫn trong chiến tranh Đông Dương lần thứ nhất. Sự kiện này dẫn tới Hiệp định Genève (1954) được ký kết và Việt Nam bị chia cắt thành hai vùng tập kết quân sự, lấy ranh giới là vĩ tuyến 17. Việt Nam Dân chủ Cộng hòa kiểm soát phần phía bắc còn phía nam do Việt Nam Cộng hòa (nhà nước kế tục Quốc gia Việt Nam) kiểm soát và được Hoa Kỳ hậu thuẫn. Xung đột về thống nhất lãnh thổ đã dẫn tới chiến tranh Việt Nam với sự can thiệp của nhiều nước và kết thúc với chiến thắng của Việt Nam Dân chủ Cộng hòa, Mặt trận Dân tộc Giải phóng miền Nam Việt Nam cùng sự sụp đổ của Việt Nam Cộng hòa vào năm 1975. Chủ quyền phần phía Nam được chính quyền Cộng hòa miền Nam Việt Nam (do Mặt trận Dân tộc Giải phóng miền Nam Việt Nam thành lập) giành quyền kiểm soát. Năm 1976, Việt Nam Dân chủ Cộng hòa và Cộng hòa miền Nam Việt Nam thống nhất thành Cộng hòa xã hội chủ nghĩa Việt Nam.
+            Sau khi tái thống nhất, Việt Nam tiếp tục gặp khó khăn do sự sụp đổ và tan rã của đồng minh Liên Xô cùng Khối phía Đông, các lệnh cấm vận của Hoa Kỳ, chiến tranh Đông Dương lần ba và hậu quả của chính sách bao cấp sau nhiều năm áp dụng. Năm 1986, Đảng Cộng sản Việt Nam ban hành cải cách đổi mới, xây dựng kinh tế thị trường và hội nhập sâu rộng. Cải cách kinh tế cùng quy mô dân số lớn đưa Việt Nam trở thành một trong những nước đang phát triển có tốc độ tăng trưởng thuộc nhóm nhanh nhất thế giới, được coi là Hổ mới châu Á dù cho vẫn gặp phải những thách thức như tham nhũng và phúc lợi xã hội chưa đầy đủ. Ngoài ra, giới bất đồng chính kiến và các tổ chức theo dõi nhân quyền có quan điểm chỉ trích hồ sơ nhân quyền của Việt Nam liên quan đến các vấn đề tôn giáo, kiểm duyệt truyền thông và tự do dân sự.
+        </div>
+        <div class="card">
+            <h2 style="text-align: center;">Video Tư Liệu: TÓM TẮT LỊCH SỬ ĐẤT NƯỚC VIỆT NAM</h2>
+            <div class="video-container">
+<video width="100%" height="auto" controls>
+        	    <source src="https://www.dropbox.com/scl/fi/sw3pd4gusdso8h8p03ik1/259-Ch…ouTube.mp4?rlkey=nlzesaokugg9pios7zbrirk5g&st=hbfl6log&raw=1" type="video/mp4">
+                </video>
+        </div>
+    </div>
+
+    <div class="card">
+        <h2 style="color: #002868; border-bottom: 2px solid #002868; padding-bottom: 10px;">(2) THÔNG TIN VỀ LÀO</h2>
+        <div class="history-content">
+            Nằm trên bán đảo Đông Dương, giáp Việt Nam, Cam-pu-chia, Thái Lan, Mi-an-ma và Trung Quốc. Lào là một nước không có biển. Sản xuất lâm nghiệp và khai thác gỗ là ngành cho thu nhập chính đối với nền kinh tế của Lào. Cây lương thực chủ yếu là lúa nếp. Công nghiệp chủ yếu là khai khoáng và chế biến lâm sản, khai thác thủy điện. 
+            Vị trí địa lý: Nằm trên bán đảo Đông Dương, giáp Việt Nam, Cam-pu-chia, Thái Lan, Mi-an-ma và Trung Quốc. 
+            Tọa độ: 18000 vĩ bắc, 105000 kinh đông.
+            Diện tích: 236.800 km2
+            Thủ đô: Viêng Chăn (Vientiane)
+            Lịch sử: Vào thế kỷ XIV, vua Phạ Ngừm thống nhất nước Lào, thành vương quốc Lạn Xạng (Triệu Voi). Năm 1893, thực dân Pháp đô hộ Lào. Ngày 12/10/1945, nước Lào độc lập. Đầu năm 1946, Pháp quay lại xâm lược Lào. Tháng 7-1954, Pháp ký hiệp định Giơ-ne-vơ công nhận nền độc lập của Lào. Từ năm 1955, Mỹ gây chiến tranh chống lại nhân dân Lào. Ngày 21/2/1973, Hiệp định Viêng Chăn lập lại hòa bình và thực hiện hòa hợp dân tộc ở Lào được ký kết giữa Mặt trận Lào yêu nước và phái hữu Viêng Chăn. Ngày 2/12/1975, Đại hội đại biểu nhân dân Lào họp ở Viêng Chăn tuyên bố thành lập nước Cộng hòa dân chủ nhân dân Lào.
+            Quốc Khánh: 02-12 (1975)
+            Tổ chức nhà nước:
+            Chính thể: Nhà nước dân chủ nhân dân.
+            Các khu vực hành chính: 16 tỉnh, 1 thành phố* và 1 vùng đặc biệt**: Attapu, Bokeo, Bolikhamxai, Champasak, Houaphan, Khammouan, Louangnamtha, Louangphabang, Oudomxai, Phongsali, Salavan, Savannakhet, Viangchan*, Viang-chan, Xâignbouli, Xaisomboun**, Xekong, Xiangkhoang.
+            Hiến pháp: Thông qua ngày 14/8/1991.
+            Cơ quan hành pháp:
+            Đứng đầu Nhà nước: Chủ tịch nước.
+            Đứng đầu Chính phủ: Thủ tướng.
+            Bầu cử: Chủ tịch nước do Quốc hội bầu, nhiệm kỳ 5 năm; Thủ tướng do Chủ tịch nước bổ nhiệm với sự phê duyệt của Quốc hội, nhiệm kỳ 5 năm.
+Cơ quan lập pháp: Quốc hội (99 ghế, được bầu theo phổ thông đầu phiếu, nhiệm kỳ 5 năm).
+            Cơ quan tư pháp: Tòa án nhân dân tối cao do Quốc hội bầu dựa trên đề cử của Uỷ ban thường vụ Quốc hội, Phó chánh Tòa án nhân dân tối cao và các thẩm phán do Uỷ ban thường vụ Quốc hội bổ nhiệm.
+            Chế độ bầu cử: Từ 18 tuổi trở lên, phổ thông đầu phiếu.
+            Chính đảng: Đảng Nhân dân cách mạng Lào (LPRP), đứng đầu là Tổng Bí thư kiêm Chủ tịch nước.
+            Khí hậu: Nhiệt đới gió mùa; mùa mưa (tháng 5 đến tháng 11); mùa khô (tháng 12 đến tháng 4). Nhiệt độ trung bình ở miền Bắc tháng 1: 15oC, tháng 7: 28oC , ở miền Nam và miền Trung tháng 1: 25oC , tháng 7: 30oC. Lượng mưa trung bình ở vùng núi 3.500 mm, ở đồng bằng 1.000 - 2.000 mm.
+            Địa hình: Phần lớn là đồi núi, có một số vùng đồng bằng và cao nguyên.
+            Tài nguyên thiên nhiên: Gỗ, thủy điện, thạch cao, thiếc, vàng, đá quý.
+            Dân số: khoảng 6.769.700 người (2013)
+            Các dân tộc: Lào Loum (đồng bằng) (68%), Lào Theung (vùng cao) (22%), Lào Soung (vùng núi) (9%), một số dân tộc khác (1%).
+            Ngôn ngữ chính: Tiếng Lào; tiếng Pháp, Anh và một số thổ ngữ khác cũng được sử dụng.
+            Tôn giáo: Đạo Phật (60%), tín ngưỡng truyền thống và tôn giáo khác (40%).
+            Kinh tế:
+            Tổng quan: Lào là một nước không có biển, với cơ sở hạ tầng còn thô sơ, không có đường sắt, hệ thống đường sá mới hình thành, hệ thống truyền thông còn hạn chế. Điện chủ yếu chỉ có ở khu vực đô thị. Kinh tế nông nghiệp chiếm 1/2 GDP và sử dụng 80% lực lượng lao động. Tuy nhiên, sản xuất lâm nghiệp và khai thác gỗ mới là ngành cho thu nhập chính đối với nền kinh tế của Lào. Cây lương thực chủ yếu là lúa nếp. Công nghiệp chủ yếu là khai khoáng và chế biến lâm sản, khai thác thủy điện. Trong những năm gần đây nền kinh tế có nhiều tiến bộ, các mục tiêu cơ bản của kế hoạch 5 năm đều đạt kết quả tốt. Nhịp độ tăng trưởng kinh tế trung bình khoảng 6%/năm thu nhập bình quân đầu người tăng dần.
+            Sản phẩm công nghiệp: Thiếc, thạch cao, gỗ, điện, hàng may mặc.
+            Sản phẩm nông nghiệp: Khoai lang, rau xanh, ngô, cà phê, mía, thuốc lá, bông, chè, lạc, lúa gạo, gia súc, gia cầm. 
+            Văn hóa:
+Giáo dục: Miễn phí và bắt buộc trong 8 năm (từ 7 tới 15 tuổi). Mặc dù học miễn phí nhưng ở nông thôn, sau bậc tiểu học thì số người đi học giảm dần. Ở Lào có học viện kỹ thuật và trường Đại học Y khoa, các trường đào tạo giáo viên ở Viêng Chăn.
+            Các thành phố lớn: Savanakhet, Louangphrabang...
+            Đơn vị tiền tệ: kíp mới (NK), 1 NK = 100 at.
+            Danh lam thắng cảnh: Viêng Chăn, Thạt Luông, Cánh đồng Chum-Xiêng Khoảng, sông Mê Công, v.v..
+            Quan hệ quốc tế: Tham gia các tổ chức quốc tế: AsDB, ASEAN, FAO, G-77, IBRD, ICAO, IFAD, ILO, IMF, Interpol, IOC, ITU, UN, UNCTAD, UNESCO, UNIDO, UPU, WFTU, WHO, WIPO, WMO, v.v..
+        </div>
+        <div class="card">
+            <h2 style="text-align: center;">Video Tư Liệu: TÓM TẮT LỊCH SỬ ĐẤT NƯỚC LÀO</h2>
+            <div class="video-container">
+                <video width="100%" height="auto" controls>
+        	    <source src="https://www.dropbox.com/scl/fi/ms8pjhtn913c5z5vvct5t/T-m-t-…ouTube.mp4?rlkey=fjvd0pj57e10cswotzjj5vxul&st=sshgvxdi&raw=1" type="video/mp4">
+                </video>
+        </div>
+    </div>
+    </div>
+</section>
+
+<section id="culture" class="page" style="display:none;">
+    <div class="card">
+        <h2>VĂN HÓA NƯỚC CỘNG HÒA DÂN CHỦ NHÂN DÂN LÀO</h2>
+        <p>Lào được nhắc đến với cái tên Triệu Voi hay còn gọi là xứ sở Champa, người anh em của Việt Nam, nới về truyền thống văn hóa và con người thì Việt và Lào có khá nhiều nét tương đồng. Đến với Lào là đến với đất nước của chùa tháp và lễ hội. Đến du lịch Lào du khách không thể bỏ qua những ngôi đền đài, chùa tháp, những hang động kì bí và những thác nước hùng vĩ, còn có những dãy núi cao thấp thoáng sương mù và những cánh rừng dày đặc phong phú với hàng ngàn loại thực vật khác nhau.Nhân dân Lào có nhiều phong tục tốt đẹp được hình thành trong quá trình lịch sử. Những phong tục tập quán ấy trở thành lệ làng, được các thành viên trong bản mường thừa nhận và tự giác thực hiện. Thành viên nào làm trái lệ làng sẽ bị phạt, hình thức phạt do các già bản và tập thể bản mường quyết định. Nước Lào nằm sâu trong lục địa châu Á nơi giao tiếp giữa hai nên văn minh cổ đại là Ấn Độ và Trung Hoa. Bởi vậy trong quá trình lịch sử, nhân dân Lào còn tiếp thu các trào lưu văn hóa tràn qua các vùng này, ảnh hưởng sâu sắc nhất là phật giáo và văn hóa Ấn Độ.
+Nước Lào đất rộng, dân không đông lại gồm nhiều dân tộc, bộ tộc. Tuy cùng sinh sống bằng nghề nông nhưng trình độ sản xuất không đồng đều nên phong tục tập quán ở mỗi miền có sự khác biệt. Vì thế mà phong tục tập quán ở Lào rất đa dạng thể hiện rõ trình độ sản xuất sinh hoạt của mỗi nhóm dân tộc, bộ tộc. Nhưng ở đây chỉ đề cập đến những tập quán chủ yếu có tính phổ biến.
+
+Văn hóa ăn uống
+
+Ẩm thực Lào mang phong cách tương tự các quốc gia láng giềng là Campuchia và Thái Lan: cay, chua và ngọt. Tuy nhiên, ẩm thực lại mang những phong cách đặc trưng rất riêng.
+
+Người Lào ăn gạo là chính; các món ăn có đặc điểm là dùng những gia vị như gừng, me, lá chanh, và nhiều loại ớt khô rất cay. Vị chính trong các món ăn hầu hết các món ăn đều có rất nhiều ớt. Chỉ riêng ớt có hàng chục món: từ ớt chiên giòn, ớt muối chua, ớt sa tế, ớt hầm, ớt luộc … Món ăn tiêu biểu của người Lào là sự pha trộn giữa cay và ngọt, được trung hòa thêm thảo mộc. Mắm cá (pa dek) và mắm Cheo gồm da trâu, ớt nướng, tỏi nướng, riềng nướng, đường cùng nhiều gia vị thảo mộc trộn lẫn hoặc mắm Muok gồm lòng cá trộn ớt, sả, củ hành … hầu như nhà nào cũng có và nước mắm (nám pla) được người Lào sử dụng hết sức phổ biến.
+
+Ẩm thực Lào có những món được xem là đặc sản như: Món Tam Maak Hung còn gọi là nộm đu đủ gồm dưa muối, đu đủ, đậu đũa, cà dĩa giã rồi trộn chung với cùng hàng chục gia vị ăn rất lạ. Ngoài Tam Maak Hung còn có các món như Thoót mú đẹt điêu , tôm dâm cung, cá nướng… Mỗi món đều có các nguyên liệu khác như Lạp được làm bằng thịt heo, băm nhỏ, trộn gia vị Lào, ăn với xôi hoặc cơm, trộn chung với ớt cay, cá nướng được ướp muối ngoài da, khi nuớng chín, da cá không cháy nhưng phủ trắng lớp muối, thịt cá không dính vào da, mùi thơm, chấm với nước “chẻo” (đặc chế từ ớt, tỏi, hành, mắm, muối, bột ngọt và chanh). Món ăn từ côn trùng là loại thức ăn giàu đạm được tìm thấy rất nhiều trên đất nước Campuchia và Thái Lan và Lào. Người Lào cũng rất thích dùng côn trùng để chế biến nhiều món ăn. Từ dế cơm, trứng kiến đến con cà cuống, nhền nhện trong các món chiên, xào, dồi đậu phộng đến hấp cơm hay ngâm giấm đều rất ngon. Đắt nhất vẫn là con cà cuống – một loại côn trùng có ích sống nhiều ở đồng ruộng Campuchia với hương vị thơm cay. Tuy nhiên, món ăn từ côn trùng của Lào lại ít món hơn người Thái Lan và ít phổ biến hơn</p>
+    </div>
+    <div class="card">
+<h2 style="color: #da251d; border-bottom: 2px solid #da251d; padding-bottom: 10px;">Văn hóa Việt Nam và những giá trị văn hóa Việt Nam</h2>
+        <div class="culture-content">
+            Về tiến trình lịch sử văn hóa Việt Nam       
+
+Lịch sử dân tộc Việt Nam là một quá trình diễn biến những sự kiện rất phong phú và đa dạng, thể hiện sự hùng tráng và cũng có sự bi thảm. Trong đó, văn hoá là sợi chỉ đỏ xuyên suốt toàn bộ quá trình ấy, làm nên sức sống mãnh liệt, giúp cộng đồng dân tộc Việt Nam vượt qua biết bao sóng gió và thác ghềnh để không ngừng phát triển, lớn mạnh, viết nên những trang sử hào hùng. Trải qua các giai đoạn lịch sử, đứng trước sự thách thức và ứng phó, văn hoá Việt Nam ngày càng phát triển. Trên bình diện chỉnh thể, nó cũng mang nét riêng của mỗi thời kỳ khác nhau. Bởi vậy, muốn hiểu được văn hoá Việt Nam, các nhà nghiên cứu phải phân chia sự phát triển của nó qua các giai đoạn. Trên thực tế, nhiều nhà nghiên cứu phân chia tiến trình văn hóa Việt Nam thành 6 giai đoạn là: 1) Văn hóa tiền sử; 2) Văn hóa Văn Lang - Âu Lạc; 3) Văn hóa thời chống Bắc thuộc; 4) Văn hóa Đại Việt; 5) Văn hóa Đại Nam; 6) Văn hóa hiện đại. Sáu giai đoạn này tạo thành ba lớp: lớp văn hóa bản địa, lớp văn hóa giao lưu với Trung Hoa và khu vực, lớp văn hóa giao lưu với phương Tây[1].
+
+  Lớp văn hóa bản địa được hình thành qua hai giai đoạn: giai đoạn văn hóa tiền sử và giai đoạn văn hóa Văn Lang - Âu Lạc. Ở giai đoạn văn hóa tiền sử với nội dung chính là hình thành xã hội loài người và đặc trưng nền kinh tế chủ yếu bằng hái lượm và săn bắn, với thành tựu quan trọng nhất là hình thành nghề nông nghiệp lúa nước. Ở giai đoạn văn hóa Văn Lang - Âu Lạc, văn hóa bản địa Việt cổ phát triển có sự kế tục thành tựu văn hoá giai đoạn trước cả về không gian và thời gian, sáng tạo nên những giá trị văn hoá mới, nghề nông nghiệp lúa nước và kỹ nghệ luyện kim phát triển, nổi bật là đồ đồng - văn hóa Đông Sơn, có chữ viết, cơ cấu tổ chức triều đình...
+Lớp văn hóa giao lưu với Trung Hoa và khu vực được hình thành qua hai giai đoạn: giai đoạn văn hóa chống Bắc thuộc và giai đoạn văn hóa Đại Việt. Đặc trưng chung của lớp văn hóa này là sự song song tồn tại của hai xu hướng trái ngược nhau. Một bên là xu hướng Hán hóa về mặt văn hóa, bên kia là xu hướng chống Hán hóa và Việt Nam hóa các ảnh hưởng Trung Hoa. Ở giai đoạn văn hóa thời chống Bắc thuộc, khởi đầu từ trước công nguyên và kéo dài đến khi Ngô Quyền giành lại được đất nước năm 938. Những đặc điểm chủ yếu của giai đoạn văn hóa này là: ý thức đối kháng trước nguy cơ xâm lăng của phong kiến phương Bắc; sự suy tàn của văn minh Văn Lang - Âu Lạc do suy thoái tự nhiên có tính quy luật và sự tàn phá của kẻ xâm lược; mở đầu cho quá trình giao lưu, tiếp nhận văn hoá Trung Hoa và khu vực, trong đó có văn hoá Ấn Độ. Ở giai đoạn văn hóa Đại Việt (thường tính từ năm 938 đến năm 1802), từ khi Ngô Quyền giành lại độc lập tự chủ đất nước đến hết nhà Tây Sơn. Văn hoá giai đoạn này thăng hoa nhanh chóng, trở thành đỉnh cao thứ hai trong lịch sử văn hoá Việt Nam, tiêu biểu là văn hoá thời Lý - Trần và thời Lê; sự phát triển văn hóa dân gian, chế độ thi cử, bộ máy hành chính; Phật giáo đời Lý - Trần, Nho giáo đời Lê đạt đến độ cường thịnh; các cuộc mở đất xuống phương Nam...
+
+  Lớp văn hóa giao lưu với văn hóa phương Tây, gồm hai giai đoạn: văn hóa Đại Nam và văn hóa hiện đại. Ở đây cũng có hai xu hướng trái ngược. Một bên là xu hướng Âu hóa, bên kia là xu hướng chống Âu hóa và Việt Nam hóa các ảnh hưởng phương Tây. Song, biểu hiện của chúng không phân rõ theo từng giai đoạn mà đan cài trong không gian và thời gian. Giai đoạn văn hóa Đại Nam được chuẩn bị từ thời các chúa Nguyễn, kéo dài đến thời chống Pháp thuộc, với một số nét tiêu biểu như: lần đầu tiên nước ta có được sự thống nhất về lãnh thổ và tổ chức hành chính từ Bắc tới Nam, tức từ Đồng Văn (Hà Giang) đến mũi Cà Mau; Nho giáo tuy được phục hồi nhưng có xu hướng ngày càng suy; khởi đầu thời kỳ hội nhập sâu sắc với văn hoá phương Tây và cũng là bắt đầu thời kỳ văn hoá Việt Nam hội nhập vào dòng chảy văn hoá nhân loại. Sự giao lưu, hội nhập này làm cho văn hoá nước ta biến đổi rất lớn về nhiều phương diện. Theo đó, lối tư duy phân tích phương Tây được bổ sung cho tư duy tổng hợp phương Đông truyền thống; ý thức về vai trò cá nhân được nâng cao, bổ sung dần cho ý thức cộng đồng truyền thống; đô thị ngày càng có vai trò quan trọng, ảnh hưởng đến đời sống cộng đồng...
+Giai đoạn văn hóa hiện đại được chuẩn bị từ trong lòng giai đoạn trước, có sự tiếp xúc với văn hoá phương Tây, ở dạng này hay dạng khác, qua con đường trực tiếp hoặc gián tiếp bởi khúc xạ của một nền văn hoá nào đó, để tạo nên diện mạo mới của văn hoá Việt Nam. Đặc biệt là từ những năm đầu thế kỷ XX, chủ yếu qua làn sóng Tân thư[2], một số văn thân, sỹ phu yêu nước tiến bộ tiếp thu tư tưởng mới từ bên ngoài thổi vào, nhất là tư tưởng cải cách của Minh Trị (Nhật Bản), Duy tân của Lương Khải Siêu và Khang Hữu Vi (Trung Quốc) cùng với tư tưởng khai sáng của Jean Jacques Rousseau, Charles Louis Montesquieu (Pháp)… Kết quả làm xuất hiện khuynh hướng cứu nước theo góc nhìn văn hoá mới, tiêu biểu là Phan Bội Châu với phong trào Đông du, Phan Châu Trinh với phong trào Duy tân, Lương Văn Can với phong trào Đông Kinh nghĩa thục... Tiếp ngay đó, cùng với hoạt động tích cực của lãnh tụ Nguyễn Ái Quốc và những người theo khuynh hướng cách mạng vô sản, tư tưởng chủ nghĩa Mác, V.I. Lênin đã truyền vào Việt Nam, từng bước đến với đông đảo các tầng lớp nhân dân để rồi kết với một số yếu tố khác, tạo nên nền văn hoá Việt Nam hiện đại. Khi Đảng Cộng sản Việt Nam ra đời, nền văn hoá ấy phát triển dưới sự lãnh đạo của Đảng thông qua nhiều chỉ thị, nghị quyết dẫn đường.
+
+  Với sự ra đời Đề cương văn hóa Việt Nam của đồng chí Trường Chinh năm 1943 và Mấy nguyên tắc lớn của cuộc vận động văn hóa Việt Nam mới lúc này của Đảng năm 1945 đã đánh dấu bước tiến quan trọng trong tiến trình văn hoá Việt Nam. Nội dung Đề cương về văn hóa Việt Nam trình bày ngắn gọn gồm 5 phần. Phần I: Cách đặt vấn đề; Phần II: Lịch sử và tính chất văn hóa Việt Nam; Phần III: Nguy cơ của văn hóa Việt Nam dưới ách phát xít Nhật, Pháp; Phần IV: Vấn đề cách mạng văn hóa Việt Nam; Phần V: Nhiệm vụ cần kíp của những nhà văn hóa mác xít Đông Dương và nhất là của những nhà văn hóa mác xít Việt Nam.
+Ba phương châm dân tộc - khoa học - đại chúng đã biến thành nội dung hoạt động văn hóa trong suốt cuộc cách mạng dân tộc dân chủ nhân dân. Sau thắng lợi vĩ đại của Cách mạng tháng Tám, với vị trí “văn hóa soi đường cho quốc dân đi”, Đảng Cộng sản Việt Nam và Chủ tịch Hồ Chí Minh đã lãnh đạo, chỉ đạo xây dựng và phát huy sức mạnh vĩ đại của nền văn hóa mới Việt Nam đánh thắng thực dân Pháp và đế quốc Mỹ, giải phóng hoàn toàn miền Nam, thống nhất đất nước, đưa cả nước đi lên xây dựng chủ nghĩa xã hội. Năm 1998, sau 12 năm của sự nghiệp đổi mới, Đảng ban hành Nghị quyết Trung ương 5, khóa VIII về Xây dựng và phát triển nền văn hóa Việt Nam tiên tiến, đậm đà bản sắc dân tộc. Nội dung của nó cũng là một sự tiếp thu, bổ sung và phát triển Đề cương văn hóa Việt Nam 1943.
+
+Nghị quyết Trung ương 5 có vai trò, vị trí, ý nghĩa như một cương lĩnh văn hóa của Đảng trong sự nghiệp đổi mới toàn diện đất nước theo định hướng xã hội chủ nghĩa. Từ đó đến nay, Đảng và Nhà nước ta liên tục có những chủ trương, chính sách về xây dựng và phát triển văn hoá Việt Nam tiên tiến, đậm đà bản sắc dân tộc, đáp ứng sự phát triển bền vững đất nước, vì mục tiêu dân giàu, nước mạnh, dân chủ, công bằng, văn minh; gần đây nhất là Nghị quyết Trung ương IX, khóa XI (tháng 6/2014) về xây dựng và phát triển văn hóa, con người Việt Nam đáp ứng yêu cầu phát triển bền vững đất nước[3].
+
+Một số đặc điểm của văn hóa Việt Nam
+
+          Diễn biến lịch sử lâu dài gắn với sự mở rộng địa bàn địa lý từ Bắc chí Nam, đưa đến sự hình thành những giá trị văn hoá, hợp thành một hệ thống mà chúng ta gọi là nền văn hoá Việt Nam. Đi sâu nghiên cứu nền văn hoá ấy, chúng ta thấy nổi lên tính cộng đồng bao gồm ba trục: gia đình - làng - nước và xu thế nhân văn hướng về con người, về cộng đồng dân tộc, tìm thấy ở con người những tiềm lực của những đức tính tốt đẹp. Hai điểm ấy gắn bó hữu cơ với nhau, tạo nên hạt nhân của nền văn hoá Việt Nam, từ đó tạo nên nhiều giá trị văn hoá khác nữa[4].
+
+Nền văn hoá Việt Nam hiện nay đang xây dựng là nền văn hoá tiên tiến, đậm bản sắc dân tộc, thống nhất trong đa dạng của cộng đồng các dân tộc Việt Nam, với các đặc trưng dân tộc, nhân văn, dân chủ và khoa học. Những đặc điểm cơ bản của nó có thể được khái quát qua một số nét sau đây:
+
+Về triết học và tư tưởng: Tư tưởng, triết học Việt Nam chịu nhiều ảnh hưởng tư tưởng của Phật giáo, Nho giáo, Đạo giáo; nó được dung hợp và Việt hóa đã góp phần vào sự phát triển của xã hội và văn hóa Việt Nam.
+Xã hội nông nghiệp có đặc trưng là tính cộng đồng làng xã với nhiều tàn dư nguyên thủy kéo dài đã tạo ra tính cách đặc thù của con người Việt Nam. Đó là một lối tư duy thiên về kinh nghiệm cảm tính hơn là duy lý, ưa hình tượng hơn khái niệm, nhưng uyển chuyển linh hoạt, dễ dung hợp, dễ thích nghi. Đó là một lối sống nặng tình nghĩa, đoàn kết gắn bó với họ hàng, làng nước. Đó là một cách hành động theo xu hướng giải quyết dung hoà, quân bình, dựa dẫm các mối quan hệ, đồng thời cũng khôn khéo giỏi ứng biến đã từng nhiều lần biết lấy nhu thắng cương, lấy yếu chống mạnh trong lịch sử. Trong các bậc thang giá trị tinh thần, Việt Nam đề cao chữ Nhân, kết hợp chặt chẽ Nhân với Nghĩa, Nhân với Đức, bất nhân bất nghĩa đồng nghĩa với thất đức. Chữ Phúc cũng đứng hàng đầu bảng giá trị đời sống, người ta khen nhà có phúc hơn là khen giàu, khen sang.
+
+Về phong tục, tập quán: Các phong tục hôn nhân, tang ma, lễ tết, lễ hội của người Việt Nam nói chung đều gắn với tính cộng đồng làng xã. Các tết chính là tết Nguyên đán, Rằm tháng Giêng, tết Hàn thực, tết Đoan ngọ, tết Rằm tháng Bảy, tết Trung thu,... Việt Nam là đất nước của lễ hội quanh năm, nhất là vào mùa xuân, nông nhàn. Mỗi vùng thường có lễ hội riêng, quan trọng nhất là các lễ hội nông nghiệp như cầu mưa, xuống đồng, cơm mới...; các lễ hội nghề nghiệp như đúc đồng, rèn, pháo, đua ghe...  Ngoài ra, còn có các lễ hội kỷ niệm các bậc anh hùng có công với nước, các lễ hội tôn giáo và văn hóa, hội chùa. Lễ hội có hai phần, phần lễ mang ý nghĩa khấn cầu và tạ ơn; phần hội là sinh hoạt văn hóa cộng đồng gồm nhiều trò chơi, cuộc thi dân gian.
+
+Về tín ngưỡng và tôn giáo: Tín ngưỡng dân gian Việt Nam từ cổ xưa đã bao hàm tín ngưỡng phồn thực, tín ngưỡng sùng bái tự nhiên và tín ngưỡng sùng bái con người.
+
+Từ thế kỷ XV, do nhu cầu xây dựng đất nước thống nhất, chính quyền tập trung, xã hội trật tự, Nho giáo thay chân Phật giáo trở thành Quốc giáo dưới triều Lê. Nho giáo đã bám chắc vào cơ chế chính trị - xã hội, vào chế độ học hành khoa cử, vào tầng lớp nho sĩ, dần chiếm lĩnh đời sống tinh thần xã hội. Nhưng Nho giáo cũng chỉ được tiếp thụ ở Việt Nam từng yếu tố riêng lẻ, nhất là về chính trị - đạo đức, chứ không bê nguyên xi cả hệ thống. Kitô giáo đến Việt Nam vào lúc chế độ phong kiến khủng hoảng, Phật giáo suy đồi, Nho giáo bế tắc, để trở thành chỗ an ủi tinh thần cho một bộ phận dân chúng nhưng trong một thời gian dài không hoà đồng được với văn hóa Việt Nam. Chỉ khi hoà Phúc âm trong dân tộc, nó mới đứng được ở Việt Nam.
+Các tôn giáo bên ngoài du nhập vào Việt Nam không làm mất đi tín ngưỡng dân gian bản địa mà hoà quyện vào nhau làm cho cả hai phía đều có những biến đổi nhất định, tạo nên nét riêng của tín ngưỡng Việt Nam.         
+
+Về ngôn ngữ: Trải qua nghìn năm Bắc thuộc và chống Bắc thuộc, dưới các triều đại phong kiến, ngôn ngữ chính thống là ngôn ngữ Hán, nhưng cũng là thời gian tiếng Việt tỏ rõ sức sống đấu tranh tự bảo tồn và phát triển. Chữ Hán được đọc theo cách của người Việt, gọi là cách đọc Hán - Việt và được Việt hóa bằng nhiều cách tạo ra nhiều từ Việt thông dụng. Tiếng Việt phát triển phong phú đi đến ra đời hệ thống chữ viết ghi lại tiếng Việt trên cơ sở văn tự Hán vào thế kỷ X, gọi là chữ Nôm.
+
+Đến thời kỳ thuộc Pháp và chống Pháp thuộc, chữ Hán dần bị loại bỏ, thay thế bằng tiếng Pháp dùng trong ngôn ngữ hành chính, giáo dục, ngoại giao. Chữ Quốc ngữ là sản phẩm của một số giáo sĩ phương Tây trong đó có Alexandre de Rhodes hợp tác với một số người Việt Nam dựa vào bộ chữ cái Latinh để ghi âm tiếng Việt dùng trong việc truyền giáo từ hồi thế kỷ XVII. Chữ Quốc ngữ dần được hoàn thiện, phổ cập, trở thành công cụ văn hóa quan trọng. Đến cuối thế kỷ XIX đã có sách báo xuất bản bằng chữ Quốc ngữ. Với sự ra đời chữ Quốc ngữ, có lợi thế đơn giản về hình thể kết cấu, cách viết, cách đọc, văn xuôi tiếng Việt hiện đại thực sự hình thành, tiếp nhận thuận lợi các ảnh hưởng tích cực của ngôn ngữ văn hóa phương Tây.
+
+Sau Cách mạng tháng Tám năm 1945, tiếng Việt và chữ Quốc ngữ giành được địa vị độc tôn, phát triển dồi dào, là ngôn ngữ đa năng dùng trong mọi lĩnh vực, ở mọi cấp học, phản ánh mọi hiện thực cuộc sống. Tuy vậy, bên cạnh tiếng Việt phổ thông, một số dân tộc thiểu số ở Việt Nam cũng có chữ viết riêng ngôn ngữ riêng.
+
+Về văn học: Văn học Việt Nam xuất hiện khá sớm, có hai thành phần là văn học dân gian và văn học viết. Văn học dân gian chiếm vị trí quan trọng ở Việt Nam, có công lớn gìn giữ phát triển ngôn ngữ dân tộc, nuôi dưỡng tâm hồn nhân dân. Sáng tác dân gian gồm thần thoại, sử thi, truyền thuyết, cổ tích, truyện cười, câu đố, tục ngữ, ca dao... với nhiều màu sắc các dân tộc ở Việt Nam. Văn học viết xuất hiện sau văn học dân gian, với nhiều tác giả, tác phẩm nổi tiếng, có giá trị lớn trong kho tàng văn học nước nhà và thế giới.
+Về nghệ thuật: Việt Nam có khoảng 50 nhạc cụ dân tộc. Thể loại và làn điệu dân ca Việt Nam rất phong phú khắp ba miền Bắc, Trung, Nam: từ ngâm thơ, hát ru, hò đến hát quan họ, trống quân, xoan, đúm, ví - giặm, ca Huế, bài chòi, lý, ngoài ra còn có hát xẩm, chầu văn, ca trù. Nghệ thuật sân khấu cổ truyền có chèo, tuồng tương đối phong phú, đa dạng. Bên cạnh đó, nghệ thuật chạm khắc đá, đồng, gốm đất nung ra đời rất sớm. Sau này gốm tráng men, tượng gỗ, khảm trai, sơn mài, tranh lụa, tranh giấy phát triển đến trình độ nghệ thuật cao. Đã có hàng nghìn di tích văn hóa, lịch sử được Nhà nước xếp hạng.
+
+Thế kỷ XX, tiếp xúc với văn hóa phương Tây, nhất là sau khi nước nhà độc lập, các loại hình nghệ thuật mới ra đời và phát triển mạnh, thu được những thành tựu to lớn với nội dung phản ánh hiện thực đời sống và cách mạng. Hiện nay, Việt Nam có 10 di sản văn hóa vật thể và phi vật thể được tổ chức UNESCO công nhận là di sản thế giới. Những nét văn hóa dân tộc cổ truyền hiện đang có nguy cơ bị mai một theo thời gian. Vì thế, vấn đề bảo tồn và phát triển bản sắc văn hóa dân tộc là vấn đề cấp thiết và lâu dài, đòi hỏi sự quan tâm của các ngành, các cấp và toàn thể quần chúng nhân dân, nhất là trong giai đoạn hiện nay.
+
+Những giá trị cơ bản của truyền thống văn hóa Việt Nam
+
+  Văn hóa truyền thống có tính giá trị, tính lưu truyền, tính ổn định tương đối và tính cộng đồng.
+
+Ở tính giá trị, văn hóa trở thành một bộ phận thiết yếu của cuộc sống và góp phần phát triển cuộc sống. Nó là chuẩn mực, là thước đo hành vi đạo đức, quan hệ ứng xử giữa người với người trong một cộng đồng, một giai cấp, một quốc gia, một dân tộc nhất định. Giá trị văn hóa truyền thống của một dân tộc là những nguyên lý đạo đức lớn mà con người trong một nước thuộc các thời đại, các giai đoạn lịch sử đều dựa vào để phân biệt phải trái, đúng, sai; để định hướng cho các hoạt động vì mục đích xây dựng cuộc sống tự do và tiến bộ của dân tộc đó.
+
+Ở tính lưu truyền, văn hóa ra đời, phát triển trong suốt chiều dài lịch sử của dân tộc. Những giá trị của nó được chuyển giao tiếp nối, qua nhiều thế hệ và giá trị văn hóa truyền thống đó được giữ gìn phát huy lên một tầm cao mới. Qua hàng nghìn năm lịch sử, các giá trị văn hóa truyền thống Việt Nam như chủ nghĩa yêu nước, chủ nghĩa nhân văn, ý thức cộng đồng được lưu truyền phát triển tạo thành một hệ giá trị mới của dân tộc Việt Nam.
+Ở tính ổn định tương đối, những giá trị của văn hóa truyền thống được gạn lọc, khẳng định qua nhiều thế hệ, nó trở thành cái chân, thiện, mỹ đã được lịch sử thừa nhận. Nó là một trong những hệ giá trị của văn hóa dân tộc, một thành tố ổn định của ý thức xã hội. Do đó, văn hóa truyền thống trở thành những khuôn mẫu được cố định hóa dưới dạng nghệ thuật, phong tục tập quán, nghi lễ, dư luận xã hội, pháp luật… Ví như đạo lý “uống nước nhớ nguồn”, truyền thống “lá lành đùm lá rách” trở thành những giá trị ổn định; là một trong những thước đo, khuôn mẫu đánh giá nhân cách con người, hành vi của mỗi cá nhân và cả cộng đồng xã hội.
+
+Ở tính cộng đồng, thể hiện ở chỗ, truyền thống bao giờ cũng là truyền thống của một cộng đồng nhất định nào đó. Ở Việt Nam, tính cộng đồng biểu thị tập trung ở ba kết cấu xã hội chủ yếu là: nhà - làng - nước. Nhà (được hiểu là gia đình - gia tộc) vừa là tế bào xã hội, vừa là đơn vị sản xuất trong nền kinh tế tiểu nông. "Nhà" Việt Nam là kiểu gia đình phụ hệ, hay là cả một họ tộc, đóng vai trò cực kỳ quan trọng trong việc nuôi dạy và giáo dục con cái, hình thành nhân cách và các phẩm chất đạo đức ban đầu cho các thế hệ, nhất là thế hệ trẻ. Làng là tập hợp nhiều gia đình tụ cư trong một khu vực địa lý nhất định. Làng Việt Nam là một cấu trúc cộng đồng gồm nhiều cấp độ, quan hệ... liên kết chặt chẽ với nhau. Trong lịch sử dân tộc, làng Việt Nam là đơn vị cộng đồng tạo ra sức mạnh liên kết trong lao động sản xuất, trong đời sống tinh thần, trong việc giáo dục, dạy dỗ con em. Nước là cộng đồng lớn bao trùm, tập hợp nhiều làng, nhiều vùng, nhiều tộc. Nước Việt Nam ta đã hình thành và phát triển rực rỡ từ hàng ngàn năm nay và mang những cái tên thể hiện lòng tự hào dân tộc như: Đại Việt, Đại Nam, Việt Nam... Các cộng đồng nhà - làng - nước là nơi tiếp nhận, gìn giữ và lưu truyền qua ngàn đời các truyền thống của dân tộc và truyền lại cho con cháu. dụng. Năm 1986, Đảng Cộng sản Việt Nam ban hành cải cách đổi mới, xây dựng kinh tế thị trường và hội nhập sâu rộng. Cải cách kinh tế cùng quy mô dân số lớn đưa Việt Nam trở thành một trong những nước đang phát triển có tốc độ tăng trưởng thuộc nhóm nhanh nhất thế giới, được coi là Hổ mới châu Á dù cho vẫn gặp phải những thách thức như tham nhũng và phúc lợi xã hội chưa đầy đủ. Ngoài ra, giới bất đồng chính kiến và các tổ chức theo dõi nhân quyền có quan điểm chỉ trích hồ sơ nhân quyền của Việt Nam liên quan đến các vấn đề tôn giáo, kiểm duyệt truyền thông và tự do dân sự.
+        </div>
+    </div>
+</section>
+<section id="activities" class="page" style="display:none;">
+    <div class="card">
+        <h2 style="color: #da251d; border-bottom: 2px solid #da251d; padding-bottom: 10px;">CÁC HOẠT ĐỘNG CỦA DU HỌC SINH LÀO TẠI VIỆT NAM</h2>
+<div style="text-align: justify; line-height: 1.8;">
+                  
+            <div style="display: flex; flex-direction: column; align-items: center; gap: 30px; margin: 30px 0;">
+                
+                <div style="text-align: center; width: 100%;">
+                    <img src="https://www.dropbox.com/scl/fi/p9lqg75s3932o6lc9a69d/lao1-9.jpg?rlkey=i4zctaz6yno0e7qz0as6m7abh&st=fgjkuy7r&raw=1" 
+                         alt="Đào tạo tiếng Việt" 
+                         style="width: 100%; max-width: 500px; border-radius: 12px; box-shadow: 0 5px 15px rgba(0,0,0,0.2);">
+                    <p style="font-style: italic; color: #3e2e2e; margin-top: 12px; font-weight: bold;">
+                        Du học sinh Lào đón tết Nguyên Đán tại Việt Nam 
+                    </p>
+                </div>
+
+                <div style="text-align: center; width: 100%;">
+                    <img src="https://www.dropbox.com/scl/fi/snuomppqzvuqu5bbqgwxp/vnghelao-1.jpg?rlkey=bowusm4vjhkt0y5ut7r7o1pw5&st=7jkywy78&raw=1" 
+                         alt="Văn nghệ 20/11" 
+                         style="width: 100%; max-width: 700px; border-radius: 12px; box-shadow: 0 5px 15px rgba(0,0,0,0.2);">
+                    <p style="font-style: italic; color: #444; margin-top: 12px; font-weight: bold;">
+                        Văn Nghệ chào mừng ngày nhà giáo Việt Nam 20/11
+                    </p>
+                </div>
+                <div style="text-align: center; width: 100%;">
+                    <img src="https://www.dropbox.com/scl/fi/6bxcnt1zr8paa6wm9wcxn/lao1.jpg?rlkey=nn7issaube4ttnwr7mfibxwyd&st=9ti2l9t8&raw=1" 
+                         alt="Văn nghệ 20/11" 
+                         style="width: 100%; max-width: 700px; border-radius: 12px; box-shadow: 0 5px 15px rgba(0,0,0,0.2);">
+                    <p style="font-style: italic; color: #444; margin-top: 12px; font-weight: bold;">
+                        Du Học Sinh Lào sang đào tạo tiếng Việt
+                    </p>
+                </div>
+                <div style="text-align: center; width: 100%;">
+                    <img src="https://www.dropbox.com/scl/fi/ve7izhu1xubbfwb7a174b/tetlao.jpg?rlkey=adraan6v1tt3wk7bucz1hs2ci&st=cslfcs3v&raw=1" 
+                         alt="Văn nghệ 20/11" 
+                         style="width: 100%; max-width: 700px; border-radius: 12px; box-shadow: 0 5px 15px rgba(0,0,0,0.2);">
+                    <p style="font-style: italic; color: #444; margin-top: 12px; font-weight: bold;">
+                        Cán bộ, giáo viên, nhân viên nhà trường tham gia Tết Bunpimay truyền thống cảu Lào
+                    </p>
+                </div>
+                <div style="text-align: center; width: 100%;">
+                    <img src="https://www.dropbox.com/scl/fi/6bxcnt1zr8paa6wm9wcxn/lao1.jpg?rlkey=nn7issaube4ttnwr7mfibxwyd&st=9ti2l9t8&raw=1" 
+                         alt="Văn nghệ 20/11"
+style="width: 100%; max-width: 700px; border-radius: 12px; box-shadow: 0 5px 15px rgba(0,0,0,0.2);">
+                    <p style="font-style: italic; color: #444; margin-top: 12px; font-weight: bold;">
+                        Du Học Sinh Lào sang đào tạo tiếng Việt
+                    </p>
+                </div>
+
+                <div style="text-align: center; margin: 30px 0;">
+        <div style="display: flex; justify-content: center; gap: 15px; flex-wrap: wrap;">
+            <img src="https://www.dropbox.com/scl/fi/uziolrejathlg3e7l47zo/z78227…612e9c.jpg?rlkey=w7099ygvy0jjj5ffh6p453gj1&st=cepmb4wo&raw=1" 
+            style="width: 30%; min-width: 200px; border-radius: 8px; box-shadow: 0 4px 8px rgba(0,0,0,0.1);">
+            <img src="https://www.dropbox.com/scl/fi/sa5yn4xkz32tgi5083b29/z78226…775454.jpg?rlkey=550sizrdefl7112yw2uj9lru0&st=zavr62y5&raw=1" 
+            style="width: 30%; min-width: 200px; border-radius: 8px; box-shadow: 0 4px 8px rgba(0,0,0,0.1);">
+            <img src="https://www.dropbox.com/scl/fi/77cimmtyza8bevtzx34kd/z78226…f994d8.jpg?rlkey=ttxt51zb8xm3gqgxxhio31qk7&st=kcikdo6k&raw=1" 
+            style="width: 60%; min-width: 500px; border-radius: 8px; box-shadow: 0 4px 8px rgba(0,0,0,0.1);">
+        </div>
+    
+        <p style="font-style: italic; color: #444; margin-top: 15px; font-weight: bold;">
+        Các hoạt động giao lưu văn hóa và đào tạo giữa học sinh hai nước Việt - Lào
+     </p>
+    </div>                
+        <div style="text-align: center; width: 100%;">
+                    <img src="https://www.dropbox.com/scl/fi/6fx2iew7kyhw88mx8cqof/z78226…bb9b09.jpg?rlkey=7oaklxp9shjr9qky3n3zjcu4c&st=2b2qs2iw&raw=1" 
+                         alt="Văn nghệ 20/11" 
+                         style="width: 100%; max-width: 700px; border-radius: 12px; box-shadow: 0 5px 15px rgba(0,0,0,0.2);">
+                    <p style="font-style: italic; color: #444; margin-top: 12px; font-weight: bold;">
+                        Hội thi flasmob chào mừng ngày 26/3
+                    </p>
+                </div>
+            </div>
+        </div>
+</section>
+<section id="game" class="page" style="display:none;">
+    <div class="card">
+        <h2>🎮 Game vòng quay Việt – Lào</h2>
+        <h2 id="scoreBoard">Điểm: 0</h2>
+        <div class="container">
+            <div class="card" style="text-align: center;">
+                <h3>🇻🇳 Việt Nam</h3>
+                <div id="vn-wheel" class="wheel">VN</div>
+                <button id="btn-spin-vn" onclick="spin('VN')">Quay VN</button>
+                <h4 id="vn-topic"></h4>
+                <div id="vn-question"></div>
+                <div id="vn-answers"></div>
+            </div>
+            <div class="card" style="text-align: center;">
+                <h3>🇱🇦 Lào</h3>
+<div id="lao-wheel" class="wheel">LAO</div>
+                <button id="btn-spin-lao" onclick="spin('LAO')">Quay Lào</button>
+                <h4 id="lao-topic"></h4>
+                <div id="lao-question"></div>
+                <div id="lao-answers"></div>
+            </div>
+        </div>
+        <h3 id="result"></h3>
+    </div>
+</section>
+
+<footer>
+    <p>Dự án học tập 2026 - Tình hữu nghị Việt Lào</p>
+</footer>
+
+<script>
+    let score = 0;
+    const gameData = {
+        'VN': {
+            'Văn hóa': [
+                { q: "Trang phục truyền thống Việt Nam?", A: "Kimono", B: "Hanbok", C: "Áo dài", D: "Sari", a: "C" },
+                { q: "Quốc hoa Việt Nam?", A: "Hoa sen", B: "Tulip", C: "Hoa hồng", D: "Hoa cúc", a: "A" }
+            ],
+            'Ẩm thực': [{ q: "Món ăn nổi tiếng của Việt Nam?", A: "Pizza", B: "Phở", C: "Burger", D: "Sushi", a: "B" }]
+        },
+        'LAO': {
+            'Văn hóa': [{ q: "Cách chào truyền thống của Lào?", A: "Bắt tay", B: "Nop", C: "Ôm", D: "Im lặng", a: "B" }],
+            'Ẩm thực': [{ q: "Món ăn nổi tiếng của Lào?", A: "Pizza", B: "Larb", C: "Burger", D: "Sushi", a: "B" }]
+        }
+    };
+
+    let state = {
+        VN: { topic: "", index: 0, rot: 0 },
+        LAO: { topic: "", index: 0, rot: 0 }
+    };
+
+    function showPage(id) {
+        document.querySelectorAll(".page").forEach(p => p.style.display = "none");
+        let target = document.getElementById(id);
+        if (target) target.style.display = "block";
+        window.scrollTo(0,0);
+    }
+
+    function spin(country) {
+        const btn = document.getElementById(`btn-spin-${country.toLowerCase()}`);
+        btn.disabled = true;
+        state[country].index = 0;
+        let topics = Object.keys(gameData[country]);
+        state[country].topic = topics[Math.floor(Math.random() * topics.length)];
+        state[country].rot += 1800;
+        document.getElementById(`${country.toLowerCase()}-wheel`).style.transform = `rotate(${state[country].rot}deg)`;
+        setTimeout(() => {
+            document.getElementById(`${country.toLowerCase()}-topic`).innerText = "🎯 " + state[country].topic;
+            document.getElementById(`${country.toLowerCase()}-question`).innerHTML = `<button onclick="loadQuestion('${country}')">Bắt đầu trả lời</button>`;
+            btn.disabled = false;
+        }, 3000);
+    }
+
+    function loadQuestion(country) {
+        let q = gameData[country][state[country].topic][state[country].index];
+        document.getElementById(`${country.toLowerCase()}-question`).innerText = q.q;
+        document.getElementById(`${country.toLowerCase()}-answers`).innerHTML = `
+            <button onclick="checkAnswer('${country}','A')">${q.A}</button>
+            <button onclick="checkAnswer('${country}','B')">${q.B}</button>
+            <button onclick="checkAnswer('${country}','C')">${q.C}</button>
 <button onclick="checkAnswer('${country}','D')">${q.D}</button>`;
     }
 
@@ -27,4 +723,3 @@
 </script>
 </body>
 </html>
-              
