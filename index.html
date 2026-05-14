@@ -1,194 +1,30 @@
-<!DOCTYPE html>
-<html lang="vi">
-<head>
-<meta charset="UTF-8">
-<title>Tình Hữu Nghị Việt Nam - Lào</title>
+<button onclick="checkAnswer('${country}','D')">${q.D}</button>`;
+    }
 
-<style>
-
-body{
-margin:0;
-font-family: Arial;
-background:#f4f4f4;
-}
-
-header{
-background:linear-gradient(to right,#da251d,#002868);
-color:white;
-text-align:center;
-padding:40px;
-}
-
-header h1{
-font-size:40px;
-}
-
-nav{
-background:#333;
-padding:12px;
-text-align:center;
-}
-
-nav a{
-color:white;
-margin:20px;
-text-decoration:none;
-font-weight:bold;
-}
-
-nav a:hover{
-color:yellow;
-}
-
-section{
-padding:40px;
-max-width:1000px;
-margin:auto;
-}
-
-.card{
-background:white;
-padding:25px;
-margin:25px 0;
-border-radius:10px;
-box-shadow:0 0 10px rgba(0,0,0,0.2);
-}
-
-.flag{
-text-align:center;
-font-size:60px;
-}
-
-video,iframe{
-display:block;
-margin:auto;
-border-radius:10px;
-}
-
-footer{
-background:#222;
-color:white;
-text-align:center;
-padding:20px;
-}
-
-</style>
-
-</head>
-
-<body>
-
-<header>
-<h1>Tình Hữu Nghị Việt Nam – Lào</h1>
-<p>Việt Nam – Lào hai nước chúng ta, tình sâu hơn nước Hồng Hà – Cửu Long</p>
-</header>
-
-<nav>
-<a href="#">Trang chủ</a>
-<a href="#">Lịch sử</a>
-<a href="#">Văn hóa</a>
-<a href="#">Giáo dục</a>
-</nav>
-
-<section>
-<div class="card">
-
-<h2>Trò chơi trắc nghiệm: Tình hữu nghị Việt – Lào</h2>
-
-<p>1. Quốc hoa của Lào là gì?</p>
-<input type="radio" name="q1" value="0"> Hoa sen<br>
-<input type="radio" name="q1" value="1"> Hoa Chăm Pa<br>
-<input type="radio" name="q1" value="0"> Hoa mai<br>
-
-<p>2. Việt Nam và Lào có mối quan hệ gì?</p>
-<input type="radio" name="q2" value="1"> Hữu nghị đặc biệt<br>
-<input type="radio" name="q2" value="0"> Đối thủ<br>
-<input type="radio" name="q2" value="0"> Không liên quan<br>
-
-<p>3. Thủ đô của Lào là gì?</p>
-<input type="radio" name="q3" value="1"> Viêng Chăn<br>
-<input type="radio" name="q3" value="0"> Luang Prabang<br>
-<input type="radio" name="q3" value="0"> Pakse<br>
-
-<br>
-
-<button onclick="checkQuiz()">Nộp bài</button>
-
-<h3 id="result"></h3>
-
-</div>
-
-
-<div class="card">
-
-<div class="flag">
-🇻🇳 🤝 🇱🇦
-</div>
-
-<h2>Quan hệ hữu nghị đặc biệt</h2>
-
-<p>
-Quan hệ Việt Nam – Lào là mối quan hệ hữu nghị truyền thống,
-đoàn kết đặc biệt và hợp tác toàn diện. Hai dân tộc đã cùng nhau
-đấu tranh giành độc lập và tiếp tục hợp tác phát triển trong
-nhiều lĩnh vực như kinh tế, văn hóa và giáo dục.
-</p>
-
-</div>
-
-<div class="card">
-
-<h2>Biểu tượng văn hóa</h2>
-
-<p>
-Việt Nam với hoa sen – biểu tượng của sự thanh cao.
-Lào với hoa Chăm Pa – biểu tượng của sự thuần khiết.
-Hai loài hoa thể hiện tình hữu nghị gắn bó giữa hai dân tộc.
-</p>
-
-</div>
-
-<div class="card">
-
-<h2>Video về tình hữu nghị Việt – Lào</h2>
-
-<iframe width="700" height="400"
-src="https://www.youtube.com/embed/VhkhDXOCYdI"
-frameborder="0"
-allowfullscreen>
-</iframe>
-
-</div>
-
-</section>
-
-<footer>
-
-<p>Website Tình Hữu Nghị Việt Nam – Lào | 2026</p>
-
-</footer>
-
-<script>
-
-function checkQuiz(){
-
-let score = 0;
-
-let q1 = document.querySelector('input[name="q1"]:checked');
-let q2 = document.querySelector('input[name="q2"]:checked');
-let q3 = document.querySelector('input[name="q3"]:checked');
-
-if(q1) score += parseInt(q1.value);
-if(q2) score += parseInt(q2.value);
-if(q3) score += parseInt(q3.value);
-
-document.getElementById("result").innerHTML =
-"Bạn được " + score + "/3 điểm 🎉";
-
-}
-
+    function checkAnswer(country, choice) {
+        let q = gameData[country][state[country].topic][state[country].index];
+        let resEl = document.getElementById("result");
+        if (choice === q.a) {
+            score += 10;
+            resEl.innerText = "✅ Chính xác! +10 điểm";
+            resEl.style.color = "green";
+        } else {
+            resEl.innerText = "❌ Sai rồi, đáp án là " + q.a;
+            resEl.style.color = "red";
+        }
+        document.getElementById("scoreBoard").innerText = "Điểm: " + score;
+        setTimeout(() => {
+            resEl.innerText = "";
+            state[country].index++;
+            if (state[country].index < gameData[country][state[country].topic].length) {
+                loadQuestion(country);
+            } else {
+                document.getElementById(`${country.toLowerCase()}-question`).innerText = "🎉 Hoàn thành!";
+                document.getElementById(`${country.toLowerCase()}-answers`).innerHTML = "";
+            }
+        }, 1500);
+    }
 </script>
-  
 </body>
 </html>
-
+              
